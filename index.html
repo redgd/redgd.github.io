@@ -226,23 +226,33 @@
             </div>
             <div class="row">
                     <div class="col-md-6">
-                        <form action="//formspree.io/red@red.gd" method="POST">
-						    <input type="text" name="_gotcha" style="display:none" />
-						    <input type="hidden" name="_next" value="//red.gd/thankyou.html" /
-							  <div class="form-group">
-							    <label for="YourName">Name</label>
-							    <input type="text" class="form-control" id="YourName" placeholder="Your Name" name="name">
-							  </div>
-							  <div class="form-group">
-							    <label for="youremail">Email address</label>
-							    <input type="email" class="form-control" id="youremail" placeholder="Enter email" name="_replyto">
-							  </div>
-							  <div class"form-group">
-							  <label for="message">Questions or Comments</label>
-							  	<textarea class="form-control" rows="3" id="message"></textarea>
-							  </div>
-							  <button type="submit" class="btn btn-default" value="Send">Submit</button>
-						</form>
+                       <form class="red-form" action="//formspree.io/red@red.gd" method="post" role="form">
+                        <input type="hidden" name="form_tools_form_id" value="1" />
+                              <fieldset>
+                             <!-- Name input-->
+                                <div class="form-group">
+                                  <label class="control-label" for="name">Name</label>
+                                  <input id="name" name="name" type="text" placeholder="Your name here" class="form-control">
+                                   </div>
+
+                                <!-- Email input-->
+                                <div class="form-group">
+                                  <label class="control-label" for="email">Email</label>
+                                    <input id="email" name="email" type="text" placeholder="Your email address" class="form-control">
+                                </div>
+
+                                <!-- Message body -->
+                                <div class="form-group">
+                                  <label class="control-label" for="message">Message</label>
+                                    <textarea class="form-control" id="message" name="message" placeholder="How can we help?" rows="3"></textarea>
+                                </div>
+
+                                <!-- Form actions -->
+                                <div class="form-group">
+                                    <button type="submit" class="btn btn-primary btn-md">CLICK to SEND</button>
+                                </div>
+                              </fieldset>
+                              </form>
                     </div>
                  <div class="col-md-offset-2 col-md-4 text-center">
                         <h3>ONLINE</h3>
